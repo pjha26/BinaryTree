@@ -6,10 +6,10 @@ public class pathsum {
             return false;
         }
         if(root.right==null && root.left==null){
-            return targetSum==root.val;
+            return targetSum==root.data;
         }
-   return hasPathSum(root.left, targetSum - ) ||
-               hasPathSum(root.right, targetSum - root.val);
+   return hasPathSum(root.left, targetSum - root.data) ||
+               hasPathSum(root.right, targetSum - root.data);
         }
         
 }
